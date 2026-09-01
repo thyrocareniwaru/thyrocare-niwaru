@@ -63,7 +63,10 @@ footer{background:#041521;color:#9bb3bc;padding:55px 0 28px}.footergrid{display:
 <nav class="nav">
   <a class="brand" href="#"><span class="brandmark">T</span> Thyrocare Niwaru</a>
   <div class="navlinks"><a href="#services">Services</a><a href="#process">How it works</a><a href="#faq">FAQs</a><a href="#contact">Contact</a></div>
-  <a class="navcta" href="tel:+919414690414">Call Now</a>
+  <a class="navcta" href="tel:+919414690414"
+   onclick="gtag('event', 'call_click', {'event_category': 'contact', 'event_label': 'Phone Call'});">
+   Call Now
+</a>
 </nav>
 
 <header class="hero">
@@ -74,8 +77,14 @@ footer{background:#041521;color:#9bb3bc;padding:55px 0 28px}.footergrid{display:
       <h1>Blood tests,<br><span class="gradient">from your home.</span></h1>
       <p>Convenient diagnostic testing through Thyrocare, with home sample collection across Jaipur. Book by phone or WhatsApp, choose a suitable slot, and receive your report online.</p>
       <div class="actions">
-        <a class="btn primary" href="tel:+919414690414">Call Now <span>↗</span></a>
-        <a class="btn secondary" href="https://wa.me/919414690414" target="_blank" rel="noopener">Book on WhatsApp <span>↗</span></a>
+        <a class="btn primary" href="tel:+919414690414"
+   onclick="gtag('event', 'call_click', {'event_category': 'contact', 'event_label': 'Phone Call'});">
+   Call Now <span>↗</span>
+</a>
+        <a class="btn secondary" href="https://wa.me/919414690414" target="_blank" rel="noopener"
+   onclick="gtag('event', 'whatsapp_click', {'event_category': 'contact', 'event_label': 'WhatsApp'});">
+   Book on WhatsApp <span>↗</span>
+</a>
       </div>
     </div>
     <div class="hero-card reveal">
@@ -130,7 +139,10 @@ footer{background:#041521;color:#9bb3bc;padding:55px 0 28px}.footergrid{display:
   <div class="cta reveal">
    <div class="cta-inner">
     <div><span class="kicker" style="color:#8ff3d9">Ready when you are</span><h2>Book your home collection.</h2><p>Call or WhatsApp 9414690414 to discuss your test, check package availability and arrange a convenient collection slot in Jaipur.</p></div>
-    <a class="btn" href="https://wa.me/919414690414" target="_blank" rel="noopener">WhatsApp to book ↗</a>
+    <a class="btn" href="https://wa.me/919414690414" target="_blank" rel="noopener"
+   onclick="gtag('event', 'whatsapp_click', {'event_category': 'contact', 'event_label': 'WhatsApp'});">
+   WhatsApp to book ↗
+</a>
    </div>
   </div>
  </div>
@@ -154,13 +166,38 @@ footer{background:#041521;color:#9bb3bc;padding:55px 0 28px}.footergrid{display:
  <div class="container">
   <div class="footergrid">
    <div class="footerbrand"><div class="brand"><span class="brandmark">T</span> Thyrocare Niwaru</div><p>Blood tests and convenient home sample collection across Jaipur. Thyrocare laboratory processing with online reports.</p></div>
-   <div class="footlinks"><a href="#services">Services</a><a href="#process">How it works</a><a href="#faq">FAQs</a><a href="tel:+919414690414">Call</a><a href="https://wa.me/919414690414" target="_blank" rel="noopener">WhatsApp</a></div>
+   <div class="footlinks">
+  <a href="#services">Services</a>
+  <a href="#process">How it works</a>
+  <a href="#faq">FAQs</a>
+
+  <a href="tel:+919414690414"
+     onclick="gtag('event', 'call_click', {'event_category': 'contact', 'event_label': 'Phone Call'});">
+    Call
+  </a>
+
+  <a href="https://wa.me/919414690414"
+     target="_blank"
+     rel="noopener"
+     onclick="gtag('event', 'whatsapp_click', {'event_category': 'contact', 'event_label': 'WhatsApp'});">
+    WhatsApp
+  </a>
+</div>
   </div>
   <div class="copyright"><div>© 2026 Thyrocare Niwaru – Blood Tests From Home</div><div>Niwaru, Jaipur, Rajasthan · 302012</div></div>
  </div>
 </footer>
 
-<div class="mobilebar"><a class="call" href="tel:+919414690414">☎ Call Now</a><a class="wa" href="https://wa.me/919414690414" target="_blank" rel="noopener">WhatsApp</a></div>
+<div class="mobilebar">
+  <a class="call" href="tel:+919414690414"
+     onclick="gtag('event', 'call_click', {'event_category': 'contact', 'event_label': 'Phone Call'});">
+     ☎ Call Now
+  </a>
+  <a class="wa" href="https://wa.me/919414690414" target="_blank" rel="noopener"
+     onclick="gtag('event', 'whatsapp_click', {'event_category': 'contact', 'event_label': 'WhatsApp'});">
+     WhatsApp
+  </a>
+</div>
 
 <script>
 const observer=new IntersectionObserver((entries)=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});
