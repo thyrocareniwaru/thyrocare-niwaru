@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#071b2b">
+<meta name="description" content="Thyrocare Niwaru provides convenient blood tests and home blood sample collection across Jaipur. Book by phone or WhatsApp and receive reports online.">
+<meta property="og:title" content="Thyrocare Niwaru — Blood Tests From Home">
+<meta property="og:description" content="Convenient home blood sample collection in Jaipur through Thyrocare.">
+<title>Thyrocare Niwaru — Blood Tests From Home</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
+:root{
+ --ink:#071b2b; --ink2:#0d2b40; --cream:#f6fbfa; --mint:#dff8ef;
+ --teal:#00b894; --cyan:#55d6ff; --coral:#ff6b6b; --white:#fff;
+ --muted:#66808e; --line:rgba(7,27,43,.1);
+ --shadow:0 20px 60px rgba(7,27,43,.12);
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;overflow-x:hidden}
+a{color:inherit;text-decoration:none}.container{width:min(1160px,calc(100% - 40px));margin:auto}
+.nav{position:fixed;top:16px;left:50%;transform:translateX(-50%);width:min(1160px,calc(100% - 28px));z-index:50;padding:10px 12px 10px 18px;border:1px solid rgba(255,255,255,.22);border-radius:22px;background:rgba(7,27,43,.82);backdrop-filter:blur(18px);box-shadow:0 12px 40px rgba(0,0,0,.12);color:#fff;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;gap:10px;align-items:center;font-family:Manrope;font-weight:800;letter-spacing:-.03em}.brandmark{width:34px;height:34px;border-radius:11px;background:linear-gradient(135deg,var(--teal),var(--cyan));display:grid;place-items:center;color:var(--ink);font-weight:900}
+.navlinks{display:flex;gap:24px;font-size:14px;color:#d8e9ee}.navlinks a{transition:.25s}.navlinks a:hover{color:#fff}.navcta{background:#fff;color:var(--ink);padding:12px 17px;border-radius:14px;font-weight:800;font-size:14px}
+.hero{min-height:850px;padding:170px 0 110px;position:relative;background:radial-gradient(circle at 80% 20%,rgba(0,184,148,.25),transparent 28%),radial-gradient(circle at 20% 80%,rgba(85,214,255,.16),transparent 30%),var(--ink);color:#fff;overflow:hidden}
+.gridbg{position:absolute;inset:0;opacity:.11;background-image:linear-gradient(rgba(255,255,255,.18) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.18) 1px,transparent 1px);background-size:60px 60px;mask-image:linear-gradient(to bottom,#000,transparent)}
+.orb{position:absolute;border-radius:50%;filter:blur(2px);animation:float 8s ease-in-out infinite}.orb.one{width:240px;height:240px;background:rgba(0,184,148,.2);right:7%;top:20%}.orb.two{width:130px;height:130px;background:rgba(85,214,255,.2);left:8%;bottom:18%;animation-delay:-3s}
+@keyframes float{50%{transform:translate3d(0,-22px,0) scale(1.05)}}
+.hero-inner{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid rgba(255,255,255,.16);border-radius:99px;background:rgba(255,255,255,.07);font-size:13px;color:#cbe6ea}.dot{width:7px;height:7px;background:var(--teal);border-radius:50%;box-shadow:0 0 15px var(--teal)}
+h1{font-family:Manrope;font-size:clamp(48px,6.4vw,84px);line-height:.98;letter-spacing:-.065em;margin:22px 0}.gradient{background:linear-gradient(100deg,#fff 20%,#8ff3d9 58%,#73dcff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{font-size:19px;line-height:1.7;color:#b9d0d8;max-width:650px;margin:0 0 30px}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:15px 21px;border-radius:16px;font-weight:800;transition:transform .25s,box-shadow .25s}.btn:hover{transform:translateY(-3px)}.btn.primary{background:linear-gradient(135deg,var(--teal),#35d9ba);color:var(--ink);box-shadow:0 12px 30px rgba(0,184,148,.24)}.btn.secondary{border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.07);color:#fff}.btn:after{content:"";position:absolute;inset:-80% 35% auto -35%;height:160%;background:rgba(255,255,255,.22);transform:rotate(25deg);transition:.6s}.btn:hover:after{left:115%}
+.hero-card{position:relative;min-height:500px;display:grid;place-items:center}.scan{width:min(420px,88vw);aspect-ratio:1;border-radius:44px;background:linear-gradient(145deg,rgba(255,255,255,.14),rgba(255,255,255,.04));border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(14px);box-shadow:var(--shadow);position:relative;transform:rotate(3deg);animation:cardFloat 7s ease-in-out infinite}
+@keyframes cardFloat{50%{transform:rotate(-2deg) translateY(-14px)}}
+.ring{position:absolute;border:1px solid rgba(85,214,255,.45);border-radius:50%;inset:12%;animation:spin 18s linear infinite}.ring.r2{inset:25%;border-color:rgba(0,184,148,.6);animation-direction:reverse;animation-duration:12s}.ring.r3{inset:38%;border-color:rgba(255,255,255,.25);animation-duration:9s}
+@keyframes spin{to{transform:rotate(360deg)}}
+.centerdrop{width:112px;height:145px;background:linear-gradient(160deg,#ff7b7b,#ff4d67);border-radius:55% 55% 60% 60% / 42% 42% 68% 68%;transform:rotate(45deg);box-shadow:0 25px 70px rgba(255,75,103,.35);position:absolute;display:grid;place-items:center}.centerdrop:after{content:"";width:25px;height:25px;border:2px solid rgba(255,255,255,.7);border-radius:50%}
+.floating{position:absolute;padding:13px 16px;border-radius:17px;background:rgba(255,255,255,.93);color:var(--ink);box-shadow:0 18px 45px rgba(0,0,0,.18);font-size:13px;font-weight:800}.f1{top:13%;right:-4%}.f2{bottom:15%;left:-7%}.f3{bottom:2%;right:11%}
+section{padding:105px 0}.section-head{max-width:700px;margin-bottom:52px}.kicker{color:#008f75;font-weight:800;font-size:13px;text-transform:uppercase;letter-spacing:.14em}.section-head h2{font-family:Manrope;font-size:clamp(36px,4.5vw,58px);line-height:1.02;letter-spacing:-.055em;margin:13px 0}.section-head p{color:var(--muted);font-size:17px;line-height:1.7}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.feature{background:#fff;border:1px solid var(--line);border-radius:26px;padding:28px;min-height:230px;box-shadow:0 8px 30px rgba(7,27,43,.04);transition:.35s;position:relative;overflow:hidden}.feature:hover{transform:translateY(-8px);box-shadow:var(--shadow)}.icon{width:50px;height:50px;border-radius:16px;background:var(--mint);display:grid;place-items:center;font-size:22px;margin-bottom:30px}.feature h3{font-family:Manrope;font-size:21px;margin:0 0 10px}.feature p{color:var(--muted);line-height:1.65;margin:0}
+.process{background:var(--ink);color:#fff;position:relative;overflow:hidden}.process .section-head p{color:#a9c2ca}.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.13);border-radius:28px;overflow:hidden}.step{padding:28px;background:rgba(255,255,255,.045);min-height:245px;transition:.3s}.step:hover{background:rgba(0,184,148,.1)}.num{font-family:Manrope;font-size:14px;color:var(--teal);font-weight:800}.step h3{font-family:Manrope;margin-top:50px;font-size:20px}.step p{color:#9fb9c2;line-height:1.6;font-size:14px}
+.services{background:#edf8f5}.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.service{background:#fff;border:1px solid var(--line);padding:22px;border-radius:22px;min-height:155px;transition:.3s}.service:hover{transform:translateY(-5px);border-color:rgba(0,184,148,.3)}.service strong{display:block;font-family:Manrope;margin:9px 0}.service span{font-size:13px;color:var(--muted);line-height:1.5}
+.cta{padding:45px;border-radius:34px;background:linear-gradient(135deg,#062439,#0c5361 70%,#008f75);color:#fff;position:relative;overflow:hidden}.cta:before{content:"";position:absolute;width:360px;height:360px;border-radius:50%;right:-90px;top:-180px;background:rgba(85,214,255,.16)}.cta-inner{position:relative;display:flex;align-items:center;justify-content:space-between;gap:30px}.cta h2{font-family:Manrope;font-size:clamp(30px,4vw,50px);letter-spacing:-.05em;margin:0 0 10px}.cta p{color:#c3dbe0;line-height:1.6;max-width:650px}.cta .btn{background:#fff;color:var(--ink)}
+.faq{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}.faq-list{display:grid;gap:10px}.faq-item{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden}.faq-q{width:100%;background:none;border:0;padding:21px;text-align:left;font:700 16px "DM Sans";color:var(--ink);display:flex;justify-content:space-between;cursor:pointer}.faq-a{max-height:0;overflow:hidden;padding:0 21px;color:var(--muted);line-height:1.65;transition:max-height .35s,padding .35s}.faq-item.open .faq-a{max-height:220px;padding:0 21px 21px}.plus{transition:.3s}.open .plus{transform:rotate(45deg)}
+footer{background:#041521;color:#9bb3bc;padding:55px 0 28px}.footergrid{display:flex;justify-content:space-between;gap:30px}.footerbrand{color:#fff}.footerbrand p{max-width:450px;line-height:1.7}.footlinks{display:flex;gap:18px;flex-wrap:wrap}.footlinks a:hover{color:#fff}.copyright{border-top:1px solid rgba(255,255,255,.1);margin-top:40px;padding-top:22px;font-size:13px;display:flex;justify-content:space-between;gap:20px}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .75s ease,transform .75s cubic-bezier(.2,.8,.2,1)}.reveal.visible{opacity:1;transform:none}
+.mobilebar{display:none}
+@media(max-width:900px){.navlinks{display:none}.hero{padding-top:140px}.hero-inner{grid-template-columns:1fr}.hero-card{min-height:420px}.features{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.service-grid{grid-template-columns:1fr 1fr}.faq{grid-template-columns:1fr;gap:30px}.cta-inner{display:block}.cta .btn{margin-top:15px}}
+@media(max-width:600px){.container{width:min(100% - 28px,1160px)}.nav{top:9px}.brand{font-size:14px}.navcta{padding:10px 12px;font-size:12px}.hero{min-height:auto;padding:125px 0 80px}.hero p{font-size:16px}.actions .btn{width:100%}.hero-card{min-height:360px}.scan{width:300px;border-radius:32px}.f1{right:0}.f2{left:0}.f3{right:0}.features,.steps,.service-grid{grid-template-columns:1fr}section{padding:75px 0}.step{min-height:190px}.step h3{margin-top:30px}.cta{padding:30px 24px;border-radius:27px}.footergrid,.copyright{display:block}.footlinks{margin-top:22px}.copyright div+div{margin-top:10px}.mobilebar{position:fixed;display:flex;bottom:12px;left:12px;right:12px;z-index:60;padding:8px;border-radius:18px;background:rgba(7,27,43,.94);backdrop-filter:blur(15px);box-shadow:0 15px 40px rgba(0,0,0,.2);gap:8px}.mobilebar a{flex:1;text-align:center;padding:13px 8px;border-radius:13px;font-size:13px;font-weight:800}.mobilebar .call{background:#fff;color:var(--ink)}.mobilebar .wa{background:var(--teal);color:var(--ink)}body{padding-bottom:80px}}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a class="brand" href="#"><span class="brandmark">T</span> Thyrocare Niwaru</a>
+  <div class="navlinks"><a href="#services">Services</a><a href="#process">How it works</a><a href="#faq">FAQs</a><a href="#contact">Contact</a></div>
+  <a class="navcta" href="tel:+919414690414">Call Now</a>
+</nav>
+
+<header class="hero">
+  <div class="gridbg"></div><div class="orb one"></div><div class="orb two"></div>
+  <div class="container hero-inner">
+    <div class="reveal">
+      <div class="eyebrow"><span class="dot"></span> Home blood sample collection · Jaipur</div>
+      <h1>Blood tests,<br><span class="gradient">from your home.</span></h1>
+      <p>Convenient diagnostic testing through Thyrocare, with home sample collection across Jaipur. Book by phone or WhatsApp, choose a suitable slot, and receive your report online.</p>
+      <div class="actions">
+        <a class="btn primary" href="tel:+919414690414">Call Now <span>↗</span></a>
+        <a class="btn secondary" href="https://wa.me/919414690414" target="_blank" rel="noopener">Book on WhatsApp <span>↗</span></a>
+      </div>
+    </div>
+    <div class="hero-card reveal">
+      <div class="scan"><div class="ring"></div><div class="ring r2"></div><div class="ring r3"></div><div class="centerdrop"></div></div>
+      <div class="floating f1">🏠 Home collection</div><div class="floating f2">🧪 Thyrocare processing</div><div class="floating f3">📱 Online reports</div>
+    </div>
+  </div>
+</header>
+
+<section>
+ <div class="container">
+  <div class="section-head reveal"><span class="kicker">Why choose home collection</span><h2>Diagnostics made simpler.</h2><p>Skip the trip to a diagnostic centre. Arrange a collection at home and let the testing journey happen around your schedule.</p></div>
+  <div class="features">
+   <article class="feature reveal"><div class="icon">⌂</div><h3>Collected at home</h3><p>A trained phlebotomist visits your home for the scheduled sample collection.</p></article>
+   <article class="feature reveal"><div class="icon">◷</div><h3>Convenient slots</h3><p>Call or WhatsApp to arrange a collection time that works for you, subject to availability.</p></article>
+   <article class="feature reveal"><div class="icon">✓</div><h3>Online reports</h3><p>Samples are processed through Thyrocare laboratories and reports are delivered online.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="process" id="process">
+ <div class="container">
+  <div class="section-head reveal"><span class="kicker">The process</span><h2>From doorstep to report.</h2><p>A straightforward five-step journey designed around convenience.</p></div>
+  <div class="steps">
+   <article class="step reveal"><span class="num">01 / CHOOSE</span><h3>Select your test</h3><p>Tell us which blood test or health-check package you need.</p></article>
+   <article class="step reveal"><span class="num">02 / BOOK</span><h3>Reserve a slot</h3><p>Arrange a convenient home collection appointment.</p></article>
+   <article class="step reveal"><span class="num">03 / COLLECT</span><h3>Sample at home</h3><p>A trained phlebotomist collects the required sample.</p></article>
+   <article class="step reveal"><span class="num">04 / PROCESS</span><h3>Laboratory testing</h3><p>The sample is sent to Thyrocare laboratories for processing.</p></article>
+   <article class="step reveal"><span class="num">05 / RECEIVE</span><h3>Get your report</h3><p>Reports are delivered online after processing.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="services" id="services">
+ <div class="container">
+  <div class="section-head reveal"><span class="kicker">Testing & checkups</span><h2>One doorstep. Many tests.</h2><p>Ask about the tests and packages currently available for booking through Thyrocare.</p></div>
+  <div class="service-grid">
+   <article class="service reveal"><div>🩸</div><strong>Routine blood tests</strong><span>CBC, blood testing and anemia testing.</span></article>
+   <article class="service reveal"><div>◉</div><strong>Thyroid testing</strong><span>T3, T4, TSH and thyroid profiles.</span></article>
+   <article class="service reveal"><div>◒</div><strong>Diabetes testing</strong><span>Blood glucose, HbA1c and related profiles.</span></article>
+   <article class="service reveal"><div>◌</div><strong>Lipid profile</strong><span>Cholesterol and lipid testing.</span></article>
+   <article class="service reveal"><div>⌁</div><strong>Liver function</strong><span>Liver function tests and related diagnostics.</span></article>
+   <article class="service reveal"><div>⌁</div><strong>Kidney function</strong><span>Kidney function tests and related diagnostics.</span></article>
+   <article class="service reveal"><div>✦</div><strong>Vitamin tests</strong><span>Vitamin D, B12 and other available vitamin tests.</span></article>
+   <article class="service reveal"><div>＋</div><strong>Health checkups</strong><span>Full Body Checkups and comprehensive packages.</span></article>
+  </div>
+ </div>
+</section>
+
+<section id="contact">
+ <div class="container">
+  <div class="cta reveal">
+   <div class="cta-inner">
+    <div><span class="kicker" style="color:#8ff3d9">Ready when you are</span><h2>Book your home collection.</h2><p>Call or WhatsApp 9414690414 to discuss your test, check package availability and arrange a convenient collection slot in Jaipur.</p></div>
+    <a class="btn" href="https://wa.me/919414690414" target="_blank" rel="noopener">WhatsApp to book ↗</a>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="faq">
+ <div class="container faq">
+  <div class="section-head reveal"><span class="kicker">FAQs</span><h2>Good to know.</h2><p>Quick answers before you book your home sample collection.</p></div>
+  <div class="faq-list">
+   <div class="faq-item reveal"><button class="faq-q">Do you collect samples at home? <span class="plus">＋</span></button><div class="faq-a">Yes. Home blood sample collection is arranged through scheduled appointments across Jaipur, subject to serviceability and availability.</div></div>
+   <div class="faq-item reveal"><button class="faq-q">How do I book a test? <span class="plus">＋</span></button><div class="faq-a">Call or WhatsApp 9414690414. You can discuss the required test or health-check package and arrange a collection slot.</div></div>
+   <div class="faq-item reveal"><button class="faq-q">How long do reports take? <span class="plus">＋</span></button><div class="faq-a">Many routine tests can be processed within a few hours. Other tests may take longer, with some requiring up to 24–48 hours depending on the test. Reports are delivered online.</div></div>
+   <div class="faq-item reveal"><button class="faq-q">Do I need to visit the laboratory? <span class="plus">＋</span></button><div class="faq-a">For home sample collection, you do not need to travel to a diagnostic centre for the sample collection. A trained phlebotomist visits your home at the scheduled time.</div></div>
+   <div class="faq-item reveal"><button class="faq-q">Which areas do you serve? <span class="plus">＋</span></button><div class="faq-a">Home collection is available across Jaipur and surrounding areas where the service is available. Contact us to confirm your location.</div></div>
+   <div class="faq-item reveal"><button class="faq-q">Are fasting tests available? <span class="plus">＋</span></button><div class="faq-a">Fasting requirements depend on the specific test. When you book, ask about the preparation required for your test.</div></div>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <div class="container">
+  <div class="footergrid">
+   <div class="footerbrand"><div class="brand"><span class="brandmark">T</span> Thyrocare Niwaru</div><p>Blood tests and convenient home sample collection across Jaipur. Thyrocare laboratory processing with online reports.</p></div>
+   <div class="footlinks"><a href="#services">Services</a><a href="#process">How it works</a><a href="#faq">FAQs</a><a href="tel:+919414690414">Call</a><a href="https://wa.me/919414690414" target="_blank" rel="noopener">WhatsApp</a></div>
+  </div>
+  <div class="copyright"><div>© 2026 Thyrocare Niwaru – Blood Tests From Home</div><div>Niwaru, Jaipur, Rajasthan · 302012</div></div>
+ </div>
+</footer>
+
+<div class="mobilebar"><a class="call" href="tel:+919414690414">☎ Call Now</a><a class="wa" href="https://wa.me/919414690414" target="_blank" rel="noopener">WhatsApp</a></div>
+
+<script>
+const observer=new IntersectionObserver((entries)=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+document.querySelectorAll('.faq-q').forEach(btn=>btn.addEventListener('click',()=>btn.parentElement.classList.toggle('open')));
+</script>
+</body>
+</html>
